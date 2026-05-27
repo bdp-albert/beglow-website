@@ -4,7 +4,7 @@ const LOGO_ASSETS = {
   light: {
     src: "/brand/beglow-logo-white-on-black.png",
     width: 3600,
-    height: 1551
+    height: 1546
   },
   dark: {
     src: "/brand/beglow-logo-black-on-white.png",

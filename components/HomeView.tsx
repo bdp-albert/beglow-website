@@ -10,33 +10,38 @@ export function HomeView() {
     <main className="min-h-screen bg-carbon text-pearl">
       <SiteHeader />
 
-      <section className="relative min-h-[88vh] pt-[5.25rem]">
-        <div className="section-shell flex min-h-[calc(88vh-5.25rem)] flex-col justify-end pb-14 pt-8 md:pb-20">
-          <div className="relative aspect-[16/10] w-full overflow-hidden border border-white/[0.06] bg-graphite md:aspect-[21/9]">
-            <Image
-              src="/beglow-architectural-lighting.png"
-              alt="Beglow architectural lighting"
-              fill
-              priority
-              sizes="(max-width: 1240px) 100vw, 1240px"
-              quality={95}
-              className="object-cover object-center"
-            />
-            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-carbon via-carbon/20 to-transparent" />
-          </div>
+      <section className="relative min-h-[88vh]">
+        <div className="absolute inset-0 bg-graphite">
+          <Image
+            src="/beglow-architectural-lighting.png"
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            quality={95}
+            className="object-cover object-center"
+          />
+          <div
+            className="pointer-events-none absolute inset-0 bg-gradient-to-t from-carbon via-carbon/75 to-carbon/25"
+            aria-hidden
+          />
+        </div>
 
-          <div className="mt-10 max-w-3xl md:mt-14">
-            <p className="text-[0.65rem] font-medium uppercase tracking-[0.38em] text-brand">
-              Architectural lighting
-            </p>
-            <h1 className="mt-4 font-display text-3xl font-extralight leading-[1.08] tracking-[-0.03em] text-pearl md:text-5xl lg:text-[3.25rem]">
-              Space That Glow
-            </h1>
-            <p className="mt-6 max-w-2xl text-base leading-8 text-pearl/55 md:text-lg md:leading-9">
-              BEGLOW delivers lighting design, curated supply, and material
-              sourcing for architecture, hospitality, retail, and landmark
-              developments across the Middle East, Asia, and beyond.
-            </p>
+        <div className="relative z-10 flex min-h-[88vh] flex-col justify-end pt-[5.25rem]">
+          <div className="section-shell pb-14 pt-16 md:pb-20 md:pt-24">
+            <div className="max-w-3xl">
+              <p className="text-[0.65rem] font-medium uppercase tracking-[0.38em] text-brand">
+                Architectural lighting
+              </p>
+              <h1 className="mt-4 font-display text-3xl font-extralight leading-[1.08] tracking-[-0.03em] text-pearl md:text-5xl lg:text-[3.25rem]">
+                Space That Glow
+              </h1>
+              <p className="mt-6 max-w-2xl text-base leading-8 text-pearl/70 md:text-lg md:leading-9">
+                BEGLOW delivers lighting design, curated supply, and material
+                sourcing for architecture, hospitality, retail, and landmark
+                developments across the Middle East, Asia, and beyond.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -99,22 +104,6 @@ export function HomeView() {
               </li>
             ))}
           </ul>
-        </div>
-      </section>
-
-      <section className="border-t border-white/[0.06] py-16 md:py-20">
-        <div className="section-shell flex flex-col items-start justify-between gap-8 sm:flex-row sm:items-center">
-          <p className="max-w-md text-sm leading-7 text-pearl/45 md:text-base md:leading-8">
-            Discuss a new project, supply package, or sourcing brief with our
-            team.
-          </p>
-          <Link
-            href="/contact"
-            className="inline-flex items-center gap-2 border border-white/15 px-6 py-3 text-[0.65rem] font-medium uppercase tracking-[0.28em] text-pearl transition hover:border-brand hover:text-brand"
-          >
-            Contact
-            <ArrowUpRight className="h-3.5 w-3.5" />
-          </Link>
         </div>
       </section>
 

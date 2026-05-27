@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
-import { BrandLogo } from "@/components/BrandLogo";
 
 const socialLinks = [
   {
@@ -17,17 +16,10 @@ export function SiteFooter() {
   return (
     <footer className="border-t border-white/[0.06] bg-carbon">
       <div className="section-shell py-14 md:py-16">
-        <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-[1.1fr_1fr_1fr_0.85fr] lg:gap-10">
-          <div className="leading-[0]">
-            <BrandLogo variant="light" className="w-[5.5rem]" />
-            <p className="mt-6 max-w-xs text-sm leading-7 text-pearl/40">
-              Architectural lighting design, supply, and material sourcing.
-            </p>
-          </div>
-
+        <div className="grid items-stretch gap-12 sm:grid-cols-2 lg:gap-16">
           <div>
             <p className="text-[0.65rem] font-medium uppercase tracking-[0.28em] text-pearl/40">
-              China
+              Contact
             </p>
             <address className="mt-4 not-italic text-sm leading-7 text-pearl/62">
               28th Floor, Lihe International Square
@@ -36,28 +28,20 @@ export function SiteFooter() {
               <br />
               China
             </address>
+            <a
+              href="mailto:bdp@beglowdesign.com"
+              className="group mt-5 inline-flex items-center gap-2 text-sm text-pearl/70 transition hover:text-brand"
+            >
+              bdp@beglowdesign.com
+              <ArrowUpRight className="h-3.5 w-3.5 opacity-40 transition group-hover:text-brand group-hover:opacity-100" />
+            </a>
           </div>
 
-          <div>
-            <p className="text-[0.65rem] font-medium uppercase tracking-[0.28em] text-pearl/40">
-              Contact
-            </p>
-            <div className="mt-4">
-              <a
-                href="mailto:bdp@beglowdesign.com"
-                className="group inline-flex items-center gap-2 text-sm text-pearl/70 transition hover:text-brand"
-              >
-                bdp@beglowdesign.com
-                <ArrowUpRight className="h-3.5 w-3.5 opacity-40 transition group-hover:text-brand group-hover:opacity-100" />
-              </a>
-            </div>
-          </div>
-
-          <div>
+          <div className="flex flex-col items-start justify-end">
             <p className="text-[0.65rem] font-medium uppercase tracking-[0.28em] text-pearl/40">
               Social
             </p>
-            <ul className="mt-4 space-y-3">
+            <ul className="mt-4 flex flex-wrap items-center gap-x-8 gap-y-3">
               {socialLinks.map((item) => (
                 <li key={item.label}>
                   <a

@@ -14,8 +14,8 @@ export function BrandLockup({
   priority = false
 }: BrandLockupProps) {
   return (
-    <div className="inline-flex flex-col items-start overflow-hidden leading-none">
-      <div className="leading-[0]">
+    <div className="inline-flex flex-col items-start leading-none">
+      <div className="overflow-hidden leading-[0] [clip-path:inset(5px_0_4px_0)]">
         <BrandLogo
           variant="light"
           priority={priority}
