@@ -1,8 +1,8 @@
 /**
  * Pad design portfolio renders to 16:9 on #050505 — extend only, never crop.
  *
- * Source: public/images/projects/Design/<folder>/*
- * Output: public/images/projects/Design/16x9/<slug>/01.png, …
+ * Source: public/images/projects/design/<folder>/*
+ * Output: public/images/projects/design/16x9/<slug>/01.png, …
  */
 import sharp from "sharp";
 import { existsSync, mkdirSync, readdirSync, writeFileSync } from "fs";
@@ -10,9 +10,8 @@ import { dirname, extname, join } from "path";
 import { fileURLToPath } from "url";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
-const designDir = join(root, "public/images/projects/Design");
-/** Lowercase path matches site URLs (works on Linux deploy). */
-const outputRoot = join(root, "public/images/projects/design/16x9");
+const designDir = join(root, "public/images/projects/design");
+const outputRoot = join(designDir, "16x9");
 
 const TARGET_RATIO = 16 / 9;
 const PAD = { r: 5, g: 5, b: 5, alpha: 255 };
