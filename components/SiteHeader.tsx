@@ -6,7 +6,7 @@ import { MobileNav } from "@/components/MobileNav";
 
 export function SiteHeader() {
   return (
-    <header className="fixed inset-x-0 top-0 z-40 border-b border-white/[0.06] bg-carbon/90 backdrop-blur-md">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-white/[0.06] bg-carbon/95 backdrop-blur-md">
       <nav className="section-shell relative flex items-center justify-between gap-4 py-3.5 md:gap-6 md:py-4">
         <Link href="/" className="block shrink-0" aria-label="Beglow home">
           <BrandLockup
