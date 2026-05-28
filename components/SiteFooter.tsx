@@ -1,16 +1,9 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
+import { site } from "@/lib/site";
+import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 
-const socialLinks = [
-  {
-    label: "Instagram",
-    href: "https://www.instagram.com/"
-  },
-  {
-    label: "LinkedIn",
-    href: "https://www.linkedin.com/"
-  }
-] as const;
+const socialLinks = site.social;
 
 export function SiteFooter() {
   return (
@@ -39,6 +32,22 @@ export function SiteFooter() {
 
           <div className="flex flex-col items-start justify-end">
             <p className="text-[0.65rem] font-medium uppercase tracking-[0.28em] text-pearl/40">
+              WhatsApp
+            </p>
+            <a
+              href={site.whatsapp.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group mt-4 inline-flex items-center gap-3 text-sm text-pearl/70 transition hover:text-[#25D366]"
+            >
+              <span className="flex h-9 w-9 items-center justify-center border border-white/10 bg-white/[0.04] text-[#25D366] transition group-hover:border-[#25D366]/40 group-hover:bg-[#25D366]/10">
+                <WhatsAppIcon className="h-[1.15rem] w-[1.15rem]" />
+              </span>
+              <span className="leading-none">{site.whatsapp.display}</span>
+              <ArrowUpRight className="h-3.5 w-3.5 opacity-40 transition group-hover:text-[#25D366] group-hover:opacity-100" />
+            </a>
+
+            <p className="mt-8 text-[0.65rem] font-medium uppercase tracking-[0.28em] text-pearl/40">
               Social
             </p>
             <ul className="mt-4 flex flex-wrap items-center gap-x-8 gap-y-3">

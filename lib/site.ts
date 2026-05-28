@@ -2,6 +2,11 @@ export const site = {
   name: "BEGLOW",
   tagline: "Space That Glow",
   email: "bdp@beglowdesign.com",
+  /** International format without + or spaces — update with your business number. */
+  whatsapp: {
+    href: "https://wa.me/8613424564627",
+    display: "+86 134 2456 4627"
+  },
   address: {
     lines: [
       "28th Floor, Lihe International Square",

@@ -19,7 +19,7 @@ export function SiteHeader() {
           <Link href="/" className="transition hover:text-pearl">
             Home
           </Link>
-          <Link href="/#about" className="transition hover:text-pearl">
+          <Link href="/about" className="transition hover:text-pearl">
             About
           </Link>
           <NavDesignMenu />

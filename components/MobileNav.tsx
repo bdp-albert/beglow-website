@@ -10,7 +10,7 @@ const HEADER_OFFSET = "4.5rem";
 
 const primaryLinks = [
   { href: "/", label: "Home" },
-  { href: "/#about", label: "About" },
+  { href: "/about", label: "About" },
   { href: "/contact", label: "Contact", accent: true }
 ] as const;
 

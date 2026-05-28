@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
+import { site } from "@/lib/site";
+import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 
 const serviceLinks = [
   { label: "Lighting Design", href: "/design" },
@@ -31,12 +33,25 @@ export function ContactSection() {
             Studio
           </p>
           <address className="mt-5 not-italic text-base leading-8 text-pearl/62 md:leading-9">
-            28th Floor, Lihe International Square
-            <br />
-            Zhongshan, Guangdong
-            <br />
-            China
+            {site.address.lines.map((line) => (
+              <span key={line}>
+                {line}
+                <br />
+              </span>
+            ))}
           </address>
+          <a
+            href={site.whatsapp.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group mt-8 inline-flex items-center gap-3 text-base text-pearl/70 transition hover:text-[#25D366]"
+          >
+            <span className="flex h-10 w-10 items-center justify-center border border-white/10 bg-white/[0.04] text-[#25D366] transition group-hover:border-[#25D366]/40 group-hover:bg-[#25D366]/10">
+              <WhatsAppIcon className="h-5 w-5" />
+            </span>
+            <span>WhatsApp · {site.whatsapp.display}</span>
+            <ArrowUpRight className="h-4 w-4 opacity-40 transition group-hover:text-[#25D366] group-hover:opacity-100" />
+          </a>
         </div>
       </section>
 

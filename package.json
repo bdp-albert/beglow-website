@@ -11,7 +11,8 @@
     "lint": "next lint",
     "pad-portfolio": "node scripts/pad-portfolio-images.mjs",
     "pad-supply": "node scripts/pad-supply-images.mjs",
-    "trim-logos": "node scripts/trim-brand-logos.mjs"
+    "trim-logos": "node scripts/trim-brand-logos.mjs",
+    "generate-world-dots": "node scripts/generate-world-dots.mjs"
   },
   "dependencies": {
     "framer-motion": "^12.16.0",
@@ -21,15 +22,18 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "sharp": "^0.33.5",
     "@types/node": "^22.10.1",
     "@types/react": "^19.0.1",
     "@types/react-dom": "^19.0.1",
     "autoprefixer": "^10.4.20",
+    "d3-geo": "^3.1.1",
     "eslint": "^9.16.0",
     "eslint-config-next": "^15.0.4",
     "postcss": "^8.4.49",
+    "sharp": "^0.33.5",
     "tailwindcss": "^3.4.16",
-    "typescript": "^5.7.2"
+    "topojson-client": "^3.1.0",
+    "typescript": "^5.7.2",
+    "world-atlas": "^2.0.2"
   }
 }

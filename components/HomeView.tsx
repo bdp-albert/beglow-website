@@ -46,32 +46,6 @@ export function HomeView() {
         </div>
       </section>
 
-      <section id="about" className="border-t border-white/[0.06] py-20 md:py-28">
-        <div className="section-shell grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">
-          <div>
-            <p className="text-[0.65rem] font-medium uppercase tracking-[0.32em] text-pearl/40">
-              About
-            </p>
-            <h2 className="mt-4 font-display text-2xl font-extralight tracking-[-0.02em] text-pearl md:text-4xl">
-              Light as architecture
-            </h2>
-          </div>
-          <div className="space-y-6 text-base leading-8 text-pearl/55 md:text-lg md:leading-9">
-            <p>
-              From our studio in Zhongshan, we partner with architects,
-              developers, and interior designers to shape atmosphere — balancing
-              daylight, glare, maintenance, and narrative with precise
-              technical documentation.
-            </p>
-            <p>
-              Our work spans concept and schematic design through tender support
-              and site supervision, with supply chains tuned for premium
-              finishes and regional delivery.
-            </p>
-          </div>
-        </div>
-      </section>
-
       <section className="border-t border-white/[0.06] py-20 md:py-28">
         <div className="section-shell">
           <p className="text-[0.65rem] font-medium uppercase tracking-[0.32em] text-pearl/40">
