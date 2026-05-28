@@ -72,9 +72,9 @@ const steps = [
   }
 ] as const;
 
-/** Portrait process cards (682×1024 / 1024×1024). */
+/** Process images are 682×1024 (2:3). Size by height only so aspect stays exact — no letterbox. */
 const frameClassName =
-  "relative aspect-[2/3] h-[min(68vh,520px)] w-[min(88vw,340px)] sm:w-[360px]";
+  "relative aspect-[2/3] h-[min(72vh,580px)] w-auto shrink-0";
 
 const swipeThreshold = 72;
 
@@ -126,7 +126,7 @@ export function ProcessCarousel() {
           </div>
 
           <div className="relative mx-auto w-fit shrink-0 px-12 sm:px-14 md:mx-0">
-            <div className="overflow-hidden border border-white/[0.08] bg-black">
+            <div className="w-fit overflow-hidden border border-white/[0.08]">
               <AnimatePresence mode="wait" custom={direction} initial={false}>
                 <motion.article
                   key={index}
@@ -152,7 +152,7 @@ export function ProcessCarousel() {
                         src={current.image}
                         alt={`${current.title} — Beglow lighting design process`}
                         fill
-                        sizes="(max-width: 1024px) 288px, 336px"
+                        sizes="(max-width: 1024px) 320px, 400px"
                         quality={95}
                         className="object-contain object-center"
                         priority={index === 0}
