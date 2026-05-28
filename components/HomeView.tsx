@@ -1,8 +1,8 @@
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import { HeroBackground } from "@/components/HeroBackground";
 import { coreServices } from "@/lib/site";
 
 export function HomeView() {
@@ -11,21 +11,7 @@ export function HomeView() {
       <SiteHeader />
 
       <section className="relative min-h-[88vh]">
-        <div className="absolute inset-0 bg-graphite">
-          <Image
-            src="/beglow-architectural-lighting.png"
-            alt=""
-            fill
-            priority
-            sizes="100vw"
-            quality={95}
-            className="object-cover object-center"
-          />
-          <div
-            className="pointer-events-none absolute inset-0 bg-gradient-to-t from-carbon via-carbon/75 to-carbon/25"
-            aria-hidden
-          />
-        </div>
+        <HeroBackground />
 
         <div className="relative z-10 flex min-h-[88vh] flex-col justify-end pt-[5.25rem]">
           <div className="section-shell pb-14 pt-16 md:pb-20 md:pt-24">

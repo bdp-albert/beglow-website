@@ -167,8 +167,7 @@ export function WorldProjectMap() {
           Projects across regions
         </h2>
         <p className="mt-4 max-w-xl text-sm leading-7 text-pearl/50 md:text-base md:leading-8">
-          Hover a red dot for project name, type, and year. Dense regions show
-          multiple projects on one pin.
+          Project map
         </p>
 
         <div
