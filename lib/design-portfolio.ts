@@ -34,7 +34,7 @@ export const designProjects: DesignProject[] = [
     slug: "kuwait-pixel-tower",
     location: "Kuwait",
     title: "Pixel Tower",
-    images: slides("kuwait-pixel-tower", 4)
+    images: slides("kuwait-pixel-tower", 1)
   },
   {
     slug: "india-advant-atrium",
